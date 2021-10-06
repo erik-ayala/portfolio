@@ -1,4 +1,4 @@
-import Navbar from "js/navbar/navbar.js";
+import Navbar from "./navbar/navbar.js";
 
 
 /**
@@ -8,7 +8,7 @@ import Navbar from "js/navbar/navbar.js";
  */
 export default function render(props, route) {
     const app = document.querySelector('#app');
-    const title = `REST Blog - ${route.title}`;
+    const title = `Home - ${route.title}`;
     history.pushState(props, title, route.uri);
     document.title = title;
     app.innerHTML = `${Navbar(null)} ${route.returnView(props)}`;
