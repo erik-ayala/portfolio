@@ -1,0 +1,9 @@
+
+@media screen and (min-width: 750px) {
+    .header {
+        padding: .5em;
+        display: flex;
+        box-sizing: border-box;
+    }
+    
+}
